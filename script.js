@@ -21,7 +21,7 @@ let food = { x: 6, y: 7 };
 //gameLoop is run by this function
 function main(curTime) {
   //   console.log(curTime);
-  window.requestAnimationFrame(main); // read about tihis below the page
+  window.requestAnimationFrame(main); // read about this below the page
   if ((curTime - lastPaintTime) / 1000 < 1 / speed) {
     return; // means reander when uper condition goes false
   }
