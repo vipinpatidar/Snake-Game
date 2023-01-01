@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Quintessential&family=Roboto:ital@1&family=Yeon+Sung&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background: url(bg.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    /* min-width: 100vw; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#board{
+    /* margin-top: 1.2rem; */
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    background: linear-gradient(to right, #9643df, #6d32e3);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    box-shadow: 8px 8px 6px -6px black;
+}
+
+.head{
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    border: 0.25vmin solid white;
+    border-radius: 12px;
+}
+.snake{
+background-image: linear-gradient(to right, #00b09b, #96c93d);
+border: 0.25vmin solid white;
+border-radius: 16px;
+}
+.food{
+    background-color: yellow;
+    border: .25vmin solid black;
+}
+
+#scoreBox{
+   position: absolute;
+   top:9rem;
+   right: 4rem;
+   width: 13rem;
+   /* height: 2.5rem; */
+   font-size: 2rem;
+   font-weight: bold;
+   border: 2px solid black;
+    box-shadow: 0px 8px 6px -6px black;
+    text-align: center;
+    font-family: 'Piazzolla', serif;
+}
+#highScoreBox{
+    position: absolute;
+        top: 4rem;
+        right: 4rem;
+        width: 13rem;
+        /* height: 2.5rem; */
+        font-size: 2rem;
+        font-weight: bold;
+        border: 2px solid black;
+        box-shadow: 0px 8px 6px -6px black;
+        text-align: center;
+        font-family: 'Piazzolla', serif;
+}
